@@ -1,0 +1,111 @@
+/* Generics */
+
+html, body {
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cursive {
+  font-family: 'Monsieur La Doulaise', cursive;
+}
+
+main, section {
+  background: linear-gradient(45deg, #3ce9cc 0%, #a2ecff 20%, #ff9ee2 40%, #ffbda3 60%, #c0ffa7 100%);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+section::before,
+section::after {
+  content: "";
+  width: 70vmax;
+  height: 70vmax;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.07);
+  left: -20vmin;
+  top: -20vmin;
+  animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+  z-index: 1;
+  transform-origin: 55% 55%;
+  pointer-events: none;
+}
+
+section::after {
+  width: 70vmin;
+  height: 70vmin;
+  left: auto;
+  right: -10vmin;
+  top: auto;
+  bottom: 0;
+  animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+  transform-origin: 20% 20%;
+}
+
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  }
+
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Utils */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus, a.active {
+  font-weight: bold;
+  color: inherit;
+}
+
+
+/* Navigation */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  letter-spacing: 2px;
+  line-height: 50px;
+  background: hsl(0 0% 100% / 0.1);
+  height: 100vh;
+  z-index: 2;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+/* Home */
+#home .content > * {
+  line-height: 100px;
+  white-space: nowrap;
+}
