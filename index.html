@@ -31,32 +31,36 @@
             <!-- # menu di navigazione -->
             <nav class="d-flex flex-row justify-content-end">
                 <ul class="list-unstyled d-flex flex-sm-column flex-row mb-0">
-                    <li><a class="active" href="#home"><i class="fa-solid fa-house pe-4"></i><span
-                                class="d-none d-sm-inline"> HOME</span></a></li>
-                    <li><a href="#chi-sono"><i class="fa-solid fa-address-card pe-4"></i><span
-                                class="d-none d-sm-inline"> CHI SONO</span></a></li>
-                    <li><a href="#lavori"><i class="fa-solid fa-briefcase pe-4"></i><span class="d-none d-sm-inline"> I
+                    <li class="home order-4 order-sm-1 animation d-1"><a class="active" href="#home"><i
+                                class="fa-solid fa-house pe-4"></i><span class="d-none d-sm-inline">HOME</span></a>
+                    </li>
+                    <li class="about order-3 order-sm-2 animation d-2"><a href="#chi-sono"><i
+                                class="fa-solid fa-address-card pe-4"></i><span class="d-none d-sm-inline">CHI
+                                SONO</span></a></li>
+                    <li class="work order-2 order-sm-3 animation d-3"><a href="#lavori"><i
+                                class="fa-solid fa-briefcase pe-4"></i><span class="d-none d-sm-inline">I
                                 MIEI LAVORI</span></a></li>
-                    <li><a href="#contatti"><i class="fa-solid fa-feather-pointed pe-4"></i><span
-                                class="d-none d-sm-inline"> CONTATTAMI</span></a></li>
+                    <li class="contacts order-1 order-sm-4 animation d-4"><a href="#contatti"><i
+                                class="fa-solid fa-feather-pointed pe-4"></i><span
+                                class="d-none d-sm-inline">CONTATTAMI</span></a></li>
                 </ul>
             </nav>
         </div>
         <main>
             <!-- # sezione home -->
             <section id="home">
-                <div class="col offset-0 offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
+                <div class="col offset-0 offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5 fade-in show">
                     <div class="col-10 mx-auto">
-                        <p class="cursive fw-bold h1"><span class="text-white display-1">C</span>iao il mio nome è</p>
-                        <span class="display-1 fw-bold ">Laura Bigoni</span>
-                        <p class="fw-bold h3 pt-5">E sono una <span class="text-white">Web Developer</span></p>
+                        <p class="cursive fw-bold h1 animation d-1"><span class="text-white display-1">C</span>iao il mio nome è</p>
+                        <span class="display-1 fw-bold animation d-2">Laura Bigoni</span>
+                        <p class="fw-bold h3 pt-5 animation d-3">E sono una <span class="text-white">Web Developer</span></p>
                     </div>
                 </div>
             </section>
 
             <!-- # sezione chi sono -->
             <section id="chi-sono">
-                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
+                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5 fade-in">
                     <div class="col-10 mx-auto pb-5">
                         <h1 class="cursive display-1 pb-5"><span class="text-white">C</span>hi sono</h1>
                         <div
@@ -93,7 +97,7 @@
 
             <!-- # sezione lavori -->
             <section id="lavori">
-                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
+                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5 fade-in">
                     <div class="col-10 mx-auto">
                         <h1 class="cursive display-1"><span class="text-white">I</span> miei lavori</h1>
                     </div>
@@ -102,7 +106,7 @@
 
             <!-- # sezione contatti -->
             <section id="contatti">
-                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
+                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5 fade-in">
                     <div class="col-10 mx-auto">
                         <h1 class="cursive display-1 pb-5"><span class="text-white">C</span>ontatti</h1>
                         <ul class="list-unstyled">
