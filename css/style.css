@@ -10,7 +10,7 @@ html, body {
 }
 
 main, section {
-  background: linear-gradient(45deg, #3ce9cc 0%, #a2ecff 20%, #ff9ee2 40%, #ffbda3 60%, #c0ffa7 100%);
+  background: linear-gradient(45deg, #3ce9cc 0%, #a2ecff 20%, #ff9ee2 40%, #ffbda3 60%, #a8a7ff 100%);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   height: 100vh;
@@ -99,13 +99,21 @@ a:hover, a:focus, a.active {
   z-index: 2;
 }
 
-img {
-  width: 200px;
-  height: auto;
-}
 
 /* Home */
-#home .content > * {
+#home .content>* {
   line-height: 100px;
-  white-space: nowrap;
 }
+
+/* Chi sono */
+#chi-sono, #lavori, #contatti {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+/* Icons */
+.fa-chevron-down, .fa-chevron-up {
+  font-size: 14px;
+}
+
+/* contatti */
