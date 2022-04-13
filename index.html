@@ -27,43 +27,43 @@
     <div class="container-fluid px-0">
         <!-- # sezione navigazione  -->
         <div
-            class="navigation d-inline d-sm-flex col-sm-5 col-md-4 col-lg-3 ps-0 justify-content-center align-items-center">
+            class="navigation d-sm-flex col-12 col-sm-5 col-md-4 col-lg-3 ps-0 justify-content-center align-items-center">
             <!-- # menu di navigazione -->
-            <nav class="d-flex flex-column">
-                <i class="fa-solid fa-xmark ms-sm-auto d-sm-none" role="button"></i>
-                <ul class="list-unstyled d-none d-sm-block">
-                    <li><a class="active" href="#home"><i class="fa-solid fa-house pe-4"></i> HOME</a></li>
-                    <li><a href="#chi-sono"><i class="fa-solid fa-address-card pe-4"></i> CHI SONO</a></li>
-                    <li><a href="#lavori"><i class="fa-solid fa-briefcase pe-4"></i> I MIEI LAVORI</a></li>
-                    <li><a href="#contatti"><i class="fa-solid fa-feather-pointed pe-4"></i> CONTATTAMI</a></li>
+            <nav class="d-flex flex-row justify-content-end">
+                <ul class="list-unstyled d-flex flex-sm-column flex-row mb-0">
+                    <li><a class="active" href="#home"><i class="fa-solid fa-house pe-4"></i><span
+                                class="d-none d-sm-inline"> HOME</span></a></li>
+                    <li><a href="#chi-sono"><i class="fa-solid fa-address-card pe-4"></i><span
+                                class="d-none d-sm-inline"> CHI SONO</span></a></li>
+                    <li><a href="#lavori"><i class="fa-solid fa-briefcase pe-4"></i><span class="d-none d-sm-inline"> I
+                                MIEI LAVORI</span></a></li>
+                    <li><a href="#contatti"><i class="fa-solid fa-feather-pointed pe-4"></i><span
+                                class="d-none d-sm-inline"> CONTATTAMI</span></a></li>
                 </ul>
             </nav>
         </div>
         <main>
             <!-- # sezione home -->
             <section id="home">
-                <div
-                    class="h-100 col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5 d-flex flex-column justify-content-between">
+                <div class="col offset-0 offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
                     <div class="col-10 mx-auto">
-                        <p class="cursive fw-bold h1"><span class="text-white display-1">Ciao</span> il mio nome è</p>
+                        <p class="cursive fw-bold h1"><span class="text-white display-1">C</span>iao il mio nome è</p>
                         <span class="display-1 fw-bold ">Laura Bigoni</span>
                         <p class="fw-bold h3 pt-5">E sono una <span class="text-white">Web Developer</span></p>
                     </div>
-                    <a href="#chi-sono" class="ms-auto"><i class="fa-solid fa-chevron-down pe-5"></i></a>
                 </div>
             </section>
 
             <!-- # sezione chi sono -->
             <section id="chi-sono">
-                <div
-                    class="h-100 d-flex flex-column justify-content-between col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
-                    <a href="#home" class="ms-auto"><i class="fa-solid fa-chevron-up pe-5"></i></a>
+                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
                     <div class="col-10 mx-auto pb-5">
-                        <h1 class="cursive display-1 pb-5">Chi sono</h1>
+                        <h1 class="cursive display-1 pb-5"><span class="text-white">C</span>hi sono</h1>
                         <div
                             class="social d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
-                            <a href="https://github.com/LauraBigoni"><img src="img/github.png" alt="github profile"></a>
-                            <a href="https://www.linkedin.com/in/bigonilaura/" class="py-2 py-md-0 px-md-5"><img
+                            <a href="https://github.com/LauraBigoni" class="px-5 px-md-0"><img src="img/github.png"
+                                    alt="github profile"></a>
+                            <a href="https://www.linkedin.com/in/bigonilaura/" class="py-4 py-md-0 px-5"><img
                                     src="img/linkedin.png" alt="linkedin profile"></a>
                             <a href="https://wetransfer.com/" class="btn btn-sm btn-light"><i
                                     class="fa-solid fa-cloud-arrow-down"></i>
@@ -73,7 +73,7 @@
                     </div>
                     <!-- #skills -->
                     <div class="col-10 pt-5 mx-auto fs-6">
-                        <h3 class="fw-bold">Main skills</h3>
+                        <h3 class="fw-bold"><span class="text-white">M</span>ain skills</h3>
                         <div class="d-flex flex-column flex-md-row justify-content-between">
                             <ul class="list-unstyled col-3">
                                 <li>Frontend development,</li>
@@ -88,33 +88,29 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#lavori" class="ms-auto"><i class="fa-solid fa-chevron-down pe-5"></i></a>
                 </div>
             </section>
 
             <!-- # sezione lavori -->
             <section id="lavori">
-                <div
-                    class="h-100 d-flex flex-column justify-content-between col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
-                    <a href="#chi-sono" class="ms-auto"><i class="fa-solid fa-chevron-up pe-5"></i></a>
+                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
                     <div class="col-10 mx-auto">
-                        <h1 class="cursive display-1">I miei lavori</h1>
+                        <h1 class="cursive display-1"><span class="text-white">I</span> miei lavori</h1>
                     </div>
-                    <a href="#contatti" class="ms-auto"><i class="fa-solid fa-chevron-down pe-5"></i></a>
                 </div>
             </section>
 
             <!-- # sezione contatti -->
             <section id="contatti">
-                <div
-                    class="h-100 d-flex flex-column justify-content-start col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
-                    <a href="#lavori" class="ms-auto"><i class="fa-solid fa-chevron-up pe-5"></i></a>
+                <div class="col offset-sm-5 offset-md-4 offset-lg-3 py-5 ps-5">
                     <div class="col-10 mx-auto">
-                        <h1 class="cursive display-1 pb-5">Contatti</h1>
+                        <h1 class="cursive display-1 pb-5"><span class="text-white">C</span>ontatti</h1>
                         <ul class="list-unstyled">
-                            <li class="pb-3"><a href="mailto:laurabigoni.92@gmail.com"><i class="fa-solid fa-at"></i>
+                            <li class="pb-3"><a href="mailto:laurabigoni.92@gmail.com"><i
+                                        class="text-white fa-solid fa-at"></i>
                                     Email</a></li>
-                            <li><a href="https://wa.me/3791641816"><i class="fa-brands fa-whatsapp fw-bold"></i>
+                            <li><a href="https://wa.me/3791641816"><i
+                                        class="text-white fa-brands fa-whatsapp fw-bold"></i>
                                     Whatsapp</a></li>
                         </ul>
                     </div>

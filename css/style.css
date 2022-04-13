@@ -99,21 +99,21 @@ a:hover, a:focus, a.active {
   z-index: 2;
 }
 
-
 /* Home */
 #home .content>* {
   line-height: 100px;
 }
 
-/* Chi sono */
+/* sezioni*/
 #chi-sono, #lavori, #contatti {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 20px;
 }
 
-/* Icons */
-.fa-chevron-down, .fa-chevron-up {
-  font-size: 14px;
-}
 
-/* contatti */
+/* media queries */
+@media only screen and (max-width:576px) {
+  .navigation {
+    height: 5vh;
+  }
+}
