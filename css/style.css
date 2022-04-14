@@ -118,19 +118,37 @@ a:hover i.fa-solid {
   border-radius: 50%;
 }
 
+
 /* sezioni*/
 #chi-sono, #lavori, #contatti {
   letter-spacing: 3px;
   font-size: 20px;
 }
 
-.carousel-wrapper::-webkit-scrollbar {
+
+.carousel-wrapper::-webkit-scrollbar, .about-me::-webkit-scrollbar {
   width: 0 !important
 }
 
 section#lavori .carousel-wrapper {
   overflow-y: scroll;
   height: 75vh;
+}
+
+section#lavori .carousel-wrapper img.full-page {
+  width: 90%;
+  height: auto;
+
+  margin: 10px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+
+section#chi-sono .about-me {
+  overflow-y: scroll;
+  height: 40vh;
 }
 
 #lavori .carousel-wrapper img {
