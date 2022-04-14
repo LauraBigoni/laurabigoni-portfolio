@@ -89,6 +89,9 @@ a:hover, a:focus, a.active {
   color: inherit;
 }
 
+a:hover i.fa-solid {
+  transform: scale(1.2);
+}
 
 /* Navigation */
 .navigation {
@@ -105,6 +108,14 @@ a:hover, a:focus, a.active {
 /* Home */
 #home .content>* {
   line-height: 100px;
+}
+
+#home img {
+  margin-right: 65px;
+  margin-top: 85px;
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
 }
 
 /* sezioni*/
@@ -126,8 +137,8 @@ a:hover, a:focus, a.active {
 .animation {
   position: relative;
   top: 0;
-  left: -1000px;
-  animation: slide 3s forwards;
+  left: -1200px;
+  animation: slide 2s forwards;
 }
 
 .fade-in {
