@@ -124,6 +124,24 @@ a:hover i.fa-solid {
   font-size: 20px;
 }
 
+.carousel-wrapper::-webkit-scrollbar {
+  width: 0 !important
+}
+
+section#lavori .carousel-wrapper {
+  overflow-y: scroll;
+  height: 75vh;
+}
+
+#lavori .carousel-wrapper img {
+  margin: 10px;
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
 
 /* media queries */
 @media only screen and (max-width:576px) {
