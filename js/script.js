@@ -50,13 +50,13 @@ function animateContacts() {
   });
 }
 
+animateHome();
+animateAbout();
+animateWork();
+animateContacts();
+
 document.querySelectorAll('.image-preview').forEach(item => {
   item.addEventListener('click', function () {
     item.classList.toggle('full-page');
   })
 })
-
-animateHome();
-animateAbout();
-animateWork();
-animateContacts();

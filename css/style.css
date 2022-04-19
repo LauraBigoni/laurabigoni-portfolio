@@ -130,26 +130,17 @@ a:hover i.fa-solid {
   width: 0 !important
 }
 
-section#lavori .carousel-wrapper {
+section#home, section#contatti, section#lavori, section#chi-sono {
   overflow-y: scroll;
-  height: 75vh;
+  height: 100vh;
 }
 
 section#lavori .carousel-wrapper img.full-page {
   width: 90%;
   height: auto;
-
-  margin: 10px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 15px;
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  order: -1;
 }
 
-section#chi-sono .about-me {
-  overflow-y: scroll;
-  height: 40vh;
-}
 
 #lavori .carousel-wrapper img {
   margin: 10px;
