@@ -60,3 +60,12 @@ document.querySelectorAll('.image-preview').forEach(item => {
     item.classList.toggle('full-page');
   })
 })
+
+let navLinks = document.querySelectorAll('.nav-menu-link')
+
+navLinks.forEach((li) => {
+  li.addEventListener("click", (e) => {
+    navLinks.forEach((el) => el.classList.remove("active"));
+    li.classList.add("active");
+  });
+});

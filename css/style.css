@@ -84,12 +84,16 @@ a {
   color: inherit;
 }
 
-a:hover, a:focus, a.active {
+a:hover, a:focus {
+  color: inherit;
+}
+
+.navigation li.nav-menu-link.active {
   font-weight: bold;
   color: inherit;
 }
 
-a:hover i.fa-solid {
+.navigation li.nav-menu-link.active i.fa-solid {
   transform: scale(1.2);
 }
 
@@ -126,7 +130,7 @@ a:hover i.fa-solid {
 }
 
 
-.carousel-wrapper::-webkit-scrollbar, .about-me::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0 !important
 }
 
